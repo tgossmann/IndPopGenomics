@@ -1,0 +1,12 @@
+analysis	strict_triallelic_snps
+H1_only	49
+H2_only	52
+H3_only	50
+H4_only	50
+REFIND_only	4
+REFIND_plus_H1	95
+REFIND_plus_H2	106
+REFIND_plus_H3	102
+REFIND_plus_H4	91
+ALL4_highcov_no_REFIND	304
+REFIND_plus_ALL4_highcov	325

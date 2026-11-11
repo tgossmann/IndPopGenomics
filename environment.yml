@@ -1,0 +1,16 @@
+name: indpopgenomics
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python>=3.9
+  - numpy
+  - pandas
+  - matplotlib
+  - msprime=1.4.5
+  - freebayes=1.3.10
+  - bcftools=1.22
+  - samtools=1.20
+  - bwa-mem2       # mapping used v2.0pre2 (not on bioconda); see README
+  - htslib=1.22    # bgzip, tabix
+  - vcftools=0.1.17

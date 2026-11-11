@@ -1,19 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# -----------------------------
-# EDIT THIS CHROMOSOME
-# -----------------------------
-CHR="NC_031792.1"
-
-REF="/Users/mtongoss/Bioinfo/freebayes/GCF_001522545.3_Parus_major1.1_genomic.fna"
-
-REFIND="/Users/mtongoss/Bioinfo/freebayes/RefGenome/SRR3085443_sorted_dedup.cram"
-
-H1="/Users/mtongoss/Bioinfo/freebayes/GBE/SRR5423293_sorted_dedup.cram"
-H2="/Users/mtongoss/Bioinfo/freebayes/GBE/SRR5423294_sorted_dedup.cram"
-H3="/Users/mtongoss/Bioinfo/freebayes/GBE/SRR5423295_sorted_dedup.cram"
-H4="/Users/mtongoss/Bioinfo/freebayes/GBE/SRR5423296_sorted_dedup.cram"
+# Paths to the reference assembly and the mapped reads are set in config.sh
+source "$(dirname "$0")/config.sh"
 
 OUT="realdata_freebayes_highcov_${CHR}"
 mkdir -p "$OUT"/{vcf,stats,logs,triallelic}
